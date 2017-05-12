@@ -7,6 +7,8 @@ sudo add-apt-repository ppa:webupd8team/java -y					#JAVA
 sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"	#SPOTIFY
 #Repos addition
 
+homeDir = "/home/$USER"
+
 sudo apt update -y
 
 sudo apt install atom -y							#ATOM
@@ -17,17 +19,21 @@ sudo apt install maxima -y							#MAXIMA
 sudo apt install oracle-java8-installer -y					#JAVA
 
 #SPOTIFY
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886 -y	
-sudo apt-get update -qq -y							
-sudo apt-get install spotify-client -y						
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886 -y
+sudo apt-get update -qq -y
+sudo apt-get install spotify-client -y
 #SPOTIFY
 
 #GITKRAKEN
-wget https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz			
-tar -xvzf gitkraken-amd64.tar.gz						
+wget https://release.gitkraken.com/linux/gitkraken-amd64.tar.gz
+tar -xvzf gitkraken-amd64.tar.gz
 cd ./gitkraken
 chmod 777 gitkraken
 ./gitkraken
 #GITKRAKEN
 
-
+#HASHCAT
+cd ..
+chmod 777 hash.sh
+sudo ./hash.sh $homeDir
+#HASHCAT
