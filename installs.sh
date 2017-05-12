@@ -7,6 +7,8 @@ sudo add-apt-repository ppa:webupd8team/java -y					#JAVA
 sudo apt-add-repository -y "deb http://repository.spotify.com stable non-free"	#SPOTIFY
 #Repos addition
 
+cd
+
 homeDir = "/home/$USER"
 
 sudo apt update -y
@@ -30,6 +32,8 @@ tar -xvzf gitkraken-amd64.tar.gz
 cd ./gitkraken
 chmod 777 gitkraken
 ./gitkraken
+cd ..
+rm -r gitkraken-amd64.tar.gz
 #GITKRAKEN
 
 #HASHCAT
@@ -37,3 +41,12 @@ cd ..
 chmod 777 hash.sh
 sudo ./hash.sh $homeDir
 #HASHCAT
+
+#AIRCRACK_NG
+cd ..
+chmod 777 aircrack.sh
+sudo ./aircrack.sh $homeDir
+sudo airodump-ng-oui-update
+cd ..
+rm -r aircrack-ng-1.2-rc4.tar.gz
+#AIRCRACK_NG
