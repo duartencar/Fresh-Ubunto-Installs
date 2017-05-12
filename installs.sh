@@ -33,20 +33,20 @@ cd ./gitkraken
 chmod 777 gitkraken
 ./gitkraken
 cd ..
-rm -r gitkraken-amd64.tar.gz
+sudo rm -r gitkraken-amd64.tar.gz
 #GITKRAKEN
 
 #HASHCAT
-cd ..
 chmod 777 hash.sh
 sudo ./hash.sh $homeDir
+cd
 #HASHCAT
 
 #AIRCRACK_NG
-cd ..
+cd
 chmod 777 aircrack.sh
 sudo ./aircrack.sh $homeDir
 sudo airodump-ng-oui-update
-cd ..
-rm -r aircrack-ng-1.2-rc4.tar.gz
+cd
+sudo rm -r aircrack-ng-1.2-rc4.tar.gz
 #AIRCRACK_NG
