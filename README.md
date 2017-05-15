@@ -1,7 +1,7 @@
 # Fresh-Ubunto-Installs
-Script that installs Grub-Costumizer, Atom, Sublime-Text3, Maxima, Java8, Clang, Spotify, GitKraken and hashcat
+Script that installs Grub-Costumizer, Atom, Sublime-Text3, Maxima, Java8, Clang, Spotify, GitKraken, hashcat aind aircrack-ng.
 
-just open terminal:
+just open terminal in home directory:
 
 $ chmod 777 installs.sh
 
