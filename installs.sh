@@ -19,7 +19,7 @@ sudo apt install clang -y							              #CLANG
 sudo apt install sublime-text-installer -y					#SUBLIME
 sudo apt install maxima -y							            #MAXIMA
 sudo apt install oracle-java8-installer -y					#JAVA
-sudo apt install vlc browser-plugin-vlc             #VLC
+sudo apt install vlc browser-plugin-vlc  -y         #VLC
 
 #SPOTIFY
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys D2C19886 -y
